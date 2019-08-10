@@ -12,13 +12,14 @@ Ingresamos a la carpeta Other Sources.
 
 A continuacion, src/main/resources
 Editamos el archivo application.properties en el paquete <default package>
-Creamos un usuario en el administrador de base de datos.
+
+Elegimos un usuario en el administrador de base de datos.
 
 spring.datasource.username=usuarioCreado
 
 spring.datasource.password=contraseñaCreada
 
-
 Finalmente corremos el Script de la base de datos, en mi caso utilice XAMPP. Para su adminsitracion.
-  Para visualizar lo desarrolado ingresamos a un navegador y colocamos localhost:4200
+
+Para visualizar lo desarrolado ingresamos a un navegador y colocamos localhost:4200
   
