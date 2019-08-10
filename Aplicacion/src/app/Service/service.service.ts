@@ -15,4 +15,16 @@ export class ServiceService {
   getPersonas(){
     return this.http.get<Persona[]>(this.Url);
   }
+
+  setPersona(persona:Persona){
+    return this.http.post<Persona[]>(this.Url,persona);
+  }
+
+  getPersonaCedula(cedula:string){
+    return this.http.post<Persona[]>(this.Url+"/"+cedula);
+  }
+
+  updatePersona(persona:Persona){
+    return this.http.put<Persona[]>(this.Url+"/"+this.persona.cedula, persona);
+  }
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../../Service/service.service';
+import { Router } from '@angular/router';
+import { Persona } from 'src/app/Modelo/Persona';
 
 @Component({
   selector: 'app-agregar',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgregarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router, private service:ServiceService) { }
 
   ngOnInit() {
+  }
+
+  Guardar(persona:Persona){
+    this.service.setPersona(persona)
+    .subscribe(data =>{
+      alert("Persona Creada");
+      this.router.navigate(["listar"])
+    })
+
   }
 
 }

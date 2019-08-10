@@ -19,4 +19,8 @@ export class ListarComponent implements OnInit {
     })
   }
 
+  Editar(persona:Persona):void{
+    localStorage.setItem("cedula",persona.cedula.toString());
+    this.router.navigate(["editar"]);
+  }
 }
