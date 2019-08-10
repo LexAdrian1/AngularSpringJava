@@ -5,7 +5,7 @@ BackEnd Spring de Java
 Base de Datos MySQL
 
 Para Ejecutar el FrontEnd, ingresamos a la carpeta Aplicacion y ejecutamos el comando 
-ng serve
+# ng serve
 
 En la etapa del BackEnd, abrimos la solucion en NetBeans.
 Ingresamos a la carpeta Other Sources.
