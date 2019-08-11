@@ -7,55 +7,55 @@
     
                     <div class="form-group">
                         <label for="">Cedula</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Cedula" name="name" type="text" class="form-control">
                         </div>
     
                    <div class="form-group">
                        <label for="">Nombre</label>
-                       <input type="text" class="form-control">
+                       <input [(ngModel)]="Persona.Nombre" name="name" type="text" class="form-control">
                    </div>
     
                    <div class="form-group">
                         <label for="">Apellido</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Apellido" name="name" type="text" class="form-control">
                     </div>
     
                     <div class="form-group">
                         <label for="">Telefono</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Telefono" name="name" type="text" class="form-control">
                      </div>
     
                     <div class="form-group">
                         <label for="">Celular</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Celular" name="name" type="text" class="form-control">
                     </div>
     
                     <div class="form-group">
                         <label for="">Correo</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Correo" name="name" type="text" class="form-control">
                     </div>
                     
                     <div class="form-group">
                         <label for="">Direccion</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Direccion" name="name" type="text" class="form-control">
                     </div>
     
                     <div class="form-group">
                         <label for="">Salario</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Salario" name="name" type="text" class="form-control">
                     </div>
                     
                     <div class="form-group">
                         <label for="">Etnia</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Etnia" name="name" type="text" class="form-control">
                     </div>
     
                     <div class="form-group">
                         <label for="">Nacionalidad</label>
-                        <input type="text" class="form-control">
+                        <input [(ngModel)]="Persona.Nacionalidad" name="name" type="text" class="form-control">
                     </div>
     
-                    <button (click)="Actualizar()" class="btn btn-danger"></button>
+                    <button (click)="Actualizar(Persona)" class="btn btn-danger"></button>
                </form>
             </div>
         </div>
