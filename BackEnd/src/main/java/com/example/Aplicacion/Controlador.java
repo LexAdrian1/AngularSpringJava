@@ -45,8 +45,8 @@ public class Controlador {
     }
     
     @PutMapping(path = {"/{cedula}"})
-    public Persona editar(@RequestBody Persona p,@PathVariable("cedula") int id){
-        p.setId(id);
+    public Persona editar(@RequestBody Persona p,@PathVariable("cedula") String cedula){
+        p.setCedula(cedula);
         return service.editarPersona(p);
     }
     
